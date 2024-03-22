@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="vacasonido.mp3"   integrity="" crossorigin="anonymous">
+
+
+    <title>Document</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+
+#emergente{ 
+position:absolute;
+width:600px;
+height:600px;
+top:50%;
+left:50%;
+margin-top:-150px;
+margin-left:-300px ;
+background:url(foto\ vacca.jpeg) 0 0 no-repeat;
+box-shadow: 0px 0px 50px darkgreen;
+border-radius: 10px;
+display: none;
+
+}
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    
+<div id="emergente">
+
+
+
+<!---CUIDADO este boton A lo hice con bs5.bu...y elijo el buton A   ,todo esto para trabajar con boostrap----->
+
+
+<a
+    name=""
+    id=""
+    class="btn btn-warning"
+    href="#"
+    role="button"
+    onclick="init()"
+    style="margin-top: 200px; margin-left: 450px;"
+    >Button</a
+>
+
+
+
+
+
+
+</div>
+
+
+
+<script>
+window.onload = init;
+function init(){
+setTimeout(susto,2000);
+
+
+}
+
+function susto(){
+    document.getElementById("emergente").style.display="block";
+    sonido = document.createElement("audio")
+    sonido.src="vacasonido.mp3";
+    document.getElementById("emergente").appendChild(sonido);
+    sonido.play();
+}
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

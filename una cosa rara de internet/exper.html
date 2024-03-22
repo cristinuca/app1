@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script  src="jsexp.js"></script>
+
+<script>
+    for(let i= 0; i<=10; i++){
+        console.log(i + " ");
+        document.write(i+ " ");
+        alert(i+" ");
+    }
+    
+    
+    
+    
+    🍬🍬🍬🍬🍪🍪🍪
+    
+    alert(felicidades)
+    
+
+
+</script>
+
+
+
+</head>
+<body style="color: bisque;">
+      <p id="demo"></p>
+
+
+
+
+
+
+<!------
+
+
+<script>
+const persona ={nombre:"carlos" , apellido: "lopez", edad:30};
+let texto= "";
+for(let x in persona){
+    texto +=persona[x]+" ";
+}
+document.getElementById("demo").innerHTML=texto;
+
+
+
+
+
+</script>
+
+---->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-----
+<h2>while</h2>
+
+<script>
+while(condiciones){
+    linea de codigo
+}
+*/
+
+
+
+
+/*
+
+let x;
+x=1;
+while(x <=100)´{
+    document.write(x);
+    document.write('<br>');
+    x=x+1;
+}
+
+
+
+</script>   --->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Realizar un programa que imprima 25 numeros de la serie 11,22,33,44 */
+<script>
+
+let serie;
+serie=11;
+let x;
+x=1;
+while(x<=25){
+    document.write(serie);
+    document.write('<br>');
+    x=x+1;
+    serie=serie +11;
+
+}
+
+
+
+
+
+</script>
+---->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---Crear un programa que muestre los multiplos de 8 hasta el valor 500-------------
+
+
+<script>
+let multiplo8;
+multiplo8 = 8;
+while(multiplo8 <= 500){
+    document.write(multiplo8);
+    document.write('<br>');
+    multiplo8 = multiplo8 +8;
+}
+
+</script>
+-------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---escribir un programa que lea 10 notas de alumnos  y nos informe cuantos tienen notas mayores a 7
+     y cuantos menores------------------------------------------------------------------->
+
+
+
+<!--------
+
+
+
+<script>
+let x = 0;
+let cant1 = 1;
+let cant2 =0;
+
+
+
+while(x10){
+    let nota;
+    nota=parseInt(prompt('ingresar la nota: '));
+    if(nota=7){
+        cant1=cant1+1;
+
+    }else{
+        cant2=cant2+1
+    }
+    x=x+1;
+}
+document.write("cantidad de notas alumnos mayores o igual a 7: " + cant1);
+document.write("<br>");
+document.write("cantidad de alumnos nota menorea a 7" + cant2);
+
+
+
+</script>
+
+
+
+------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!------
+En una empresa trabajan 5 empleados cuyos sueldos oscilan entre 100-500 euros.REAlizar un programa que lea 
+los sueldos que creancon empleados entre 100 y 300 y cuantos cobran mas de 300 ademas  el programa debera informar
+el importe que gasta la empresa en el sueldo del personal.---->
+
+<!-----------------------------------------------
+<script>
+let cant1= 0;
+let cant2= 0;
+let total =0;
+let sueldo;
+let x =0;
+while(x<5){
+sueldo=parseInt(prompt('ingrese el sueldo: '));
+if(sueldo<=300){
+    cant1=cant1+1;
+
+}else{
+    cant2=cant2+1;
+    
+}
+
+
+total=total+sueldo;
+x=x+1;
+}
+
+document.write('cantidad de empleados que cobran 300 o menos: ' +cant1);
+document.write('<br>');
+document.write('cantidad de empleados que cobran mas de 300' +cant2);
+document.write('<br>');
+document.write('gastos en sueldos en la empresa: ' +total);
+
+
+</script>
+
+------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--------------Crear un programa que solicite la carga de un numero entre 0-999 y nos muestre 
+    el mensaje de cuantos digitos tiene el mismo -->
+
+
+<script>
+
+let valor;
+do{
+valor = parseInt(prompt('ingrese un valor entre 0-999 ' , ""));
+document.write('el valor ' + valor + 'tiene');
+if(valor<10){
+    document.write('tiene un digito');
+
+}else{
+    if(valor<100){
+
+    document.write('tiene 2 digito');
+    
+}else{
+    document.write('tiene 3 digito');
+}
+}
+document.write('<br>')
+
+
+
+
+}while(valor 1=0);
+  
+
+
+
+/*ESTE DOOCUMENT  es para estilizar el parrafo o lo que sea, pdo poner SPAN, ID O
+ CLASS  INFORMATE SOLA  Y TB LO DE LA CONSSOLA RARA DE INTERNET  */
+
+document.write(` <span style='text align:center;color: blue;background-color: pink`)
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+let num =Number(prompt ('ingrese el numero: '));
+let n;
+let intentos = 1;
+n= Math.ceil(Math.random()*100);
+while(num !==n){
+    if(num>n){
+        num =Number(prompt('ingrese un numero menor: '));
+        intentos++;
+    }else{
+    num=Number(prompt('ingrese un numero mayor: '));
+    intentos++
+}
+
+
+}
+document.write(`acertaste...ganaste en ${intentos} intentos `)
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

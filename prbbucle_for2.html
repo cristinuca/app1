@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta      name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/>
+    <title>Document</title>
+
+
+
+
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+/>
+
+
+
+
+
+
+
+
+
+</head>
+<body style="background-color: rgb(255, 247, 154);">
+    
+
+
+
+    
+        <div align="center">
+        <img src="js/images.jpeg" alt="" height="10%" width="10%">
+        </div>
+     <h3 style="text-align: center;color: blue; margin-top: 100px;">Conozca :<br>
+        *	La cantidad de valores negativos ingresados.<br>
+        *	La cantidad de valores positivos ingresados.<br>
+        *	La cantidad de múltiplos de 15.<br>
+        *	El valor acumulado de los números ingresados que son pares.<br>
+
+
+     </h3>
+
+
+      <div style="text-align: center; margin-left: 300px;margin-right: 300px;margin-top: 100px;">
+        <a
+            name=""
+            id=""
+            class="btn btn-primary"
+            href="#"
+            role="button"
+            onclick="Calcular()"
+            >INTRODUZCA VALORES</a
+        >
+      </div>
+        <p id="demo"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!---Se realiza la carga de 10 valores enteros por teclado y deseo conocer 
+La cantidada de valores negativos ingresados
+La cantidad de valores positivos ingresados
+La cantidad de multiplos de 15
+El valor acumulado de los nª ingresados pares   --->
+
+
+<script>
+    function Calcular(){
+    let cantnegativos = 0;
+    let cantpositiva = 0;
+    let mult15 = 0;
+    let sumapares = 0;
+    for(let f =1; f<= 10; f++){
+        let valor =parseInt(prompt('ingrese valor:'));
+        if(valor<0){
+            cantnegativos++;
+    
+    
+        }else {
+            if(valor>0){
+            cantpositiva++;
+        }
+    
+    }
+    
+    if(valor % 15 == 0 && valor !=0){
+    
+        mult15++;
+    }
+        if(valor % 2 == 0){
+        sumapares=sumapares+valor;
+    
+        }
+    
+    }
+    
+    document.write('cantidad de valor negativo: ' +cantnegativos +'<br>');
+    document.write('cantidad de valor positivo: ' +cantpositiva +'<br>');
+    document.write('cantidad de multiplos de 15: ' +mult15 + '<br>');
+    document.write('cantidad de valores pares ingresados: ' +sumapares); 
+
+    }
+
+
+    
+
+    
+    </script>
+
+
+
+<h1 style="margin-top: 350px; background-color: rgb(161, 9, 249); color: rgb(255, 188, 234);text-align: center; border: 2px solid black;" id="Calcular"></h1>
+
+
+
+</body>
+</html>

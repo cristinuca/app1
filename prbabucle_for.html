@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!---      <script>
+for(let f= 1; f<= 10; f++){
+document.write(f + " ");
+
+
+}
+
+
+
+</script>     -------->
+
+
+
+
+
+
+<!----Desarolla un programa que solicite la carga de 10 numeros e imprima la 
+    suma de los ultimos 5 valores ingresados-->
+
+<!------
+<script>
+
+let suma = 0;
+for(let f =1; f<=10; f++){
+let valor = parseInt(prompt("ingrese valores enteros mayores que 5"));
+if(f>5){
+    suma =suma+valor;
+}
+
+
+}
+
+document.write('la suma de los ultimos valores es:' + suma);
+
+
+
+</script>   ---->
+
+
+
+<!-----Desarolla un programa que desarolle la tabla de multiplicacion del 5-50 -->
+<!-----
+<script> 
+let  tabla= 5;
+for(let f =1; f<=10; f++){
+    document.write(tabla + "-")
+    tabla = tabla+5;
+}
+
+
+
+
+</script>     ---->
+
+
+
+
+
+
+
+
+<!---Confeccionar un programa que permita ingresar un valor del 1-10 y no muestre la tabla de multiplicar 
+del mismo (de los primeros 12 terminos  EJEMPLO:  si ingresas un 3   debera aparecer en la pantalla los valores de
+3,6,9, hasta 36)-->
+
+<!--------
+
+<script>
+let tabla = parseInt(prompt('ingrese un valor del 1 al 10: ', ''));
+let contar = tabla;
+for(let f =1; f<=12; f++){
+    document.write(contar+ ' ');
+    contar = contar + tabla; 
+}
+
+
+
+
+</script>
+
+---->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---Cuenta con la siguiente info:
+Las edades de 5 esttudiantes del turno de mañana
+Las EDADES de 6 estudianteds del turno de tarde
+Las edades de 11 estudiantes del turno noche
+1ª las edades de cada estudiante debe ingresarse por teclado
+y Obtener el promedio de las edades de cada turno (3 turnos)
+-->
+<!-----
+
+<script>
+    let suma1 =0;
+    for(let f=1;f<=5; f++){
+        let edad = parseInt(prompt(" lista de estudiantes turno mañana"));
+        suma1 = suma1+edad;
+    }
+   
+   
+
+  
+
+    let suma2 = 0;
+    for(let f=1; f<=6; f++){
+        let edad = parseInt(prompt("lista de estudiantes turno tarde: "));
+        suma2 = suma2+edad;
+    }
+   
+
+
+
+
+
+
+    let suma3 = 0;
+    for(let f=1; f<=11; f++){
+        let edad = parseInt(prompt("lista de estudiantes turno noche "));
+        suma3 = suma3+edad;
+    }
+   
+
+
+let promedio1 =suma1/5;
+let promedio2 =suma2/6;
+let promedio3 =suma3/11;
+document.write('promediode edades de alumnos turno mañana; ' +promedio1 + '<br>');
+document.write('promediode edades de alumnos turno tarde; ' +promedio2 + '<br>');
+document.write('promediode edades de alumnos turno noche; ' +promedio3 + '<br>');
+
+
+if(promedio1 > promedio2 && promedio1>promedio3){
+document.write('el turno de la mañana tiene un promedio mayor de edades');
+
+}else {
+    if(promedio2>promedio3){
+        document.write('el turno de la tarde tiene un promedio mayor de edad: ')
+    }else{
+        document.write(' el turno de noche tiene un promedio de edades')
+    }
+   }
+</script>
+
+
+
+----->
+
+
+
+
+
+
+
+
+<!---Se realiza la carga de 10 valores enteros por teclado y deseo conocer 
+La cantidada de valores negativos ingresados
+La cantidad de valores positivos ingresados
+La cantidad de multiplos de 15
+El valor acumulado de los nª ingresados pares   --->
+
+
+<script>
+let cantnegativos = 0;
+let cantpositiva = 0;
+let mult15 = 0;
+let sumapares = 0;
+for(let f =1; f<= 10; f++){
+    let valor =parseInt(prompt('ingrese valor:'));
+    if(valor<0){
+        cantnegativos++;
+
+
+    }else {
+        if(valor>0){
+        cantpositiva++;
+    }
+
+}
+
+if(valor % 15 == 0 && valor !=0){
+
+    mult15++;
+}
+    if(valor % 2 == 0){
+    sumapares=sumapares+valor;
+
+    }
+
+}
+document.write('cantidad de valor negativo: ' +cantnegativos +'<br>');
+document.write('cantidad de valor positivo: ' +cantpositiva +'<br>');
+document.write('cantidad de multiplos de 15: ' +mult15 + '<br>');
+document.write('cantidad de valores pares ingresados: ' +sumapares);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

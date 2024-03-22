@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+*{
+box-sizing: border-;
+margin: 0;
+padding: 0;
+
+}
+*container{
+opacity: .3;
+}
+
+.emergente{
+
+width: 400px;
+height: 200px;
+position: fixed;
+background-color: rgb(192, 122, 17);
+top: 50%;
+margin-left: 200px;
+margin-top: 100px;
+border: 1px solid darkolivegreen;
+padding: 20px;
+text-align: center;
+box-shadow: 10px 10px 10px wheat;
+}
+
+
+.emergente p{
+    font-size: 24px;
+}
+
+
+.emergente .boton{
+font-size: 18px;
+padding: 10px;
+border: 1px solid pink;
+border-radius: 5px;
+display: inline-block;
+width: 150px;
+margin-top: 32px;
+box-shadow: 5px 5px 5px wheat;
+
+
+
+}
+
+.menor{background-color: antiquewhite;}
+.mayor{background-color: chartreuse;}
+.menor:hover{background-color: darkslategray;}
+.mayor:hover{background-color: dimgray;}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+window.onload = init;
+function init(){
+document.querySelector(" .emergente .menor").addEventListener("click" , adios);
+document.querySelector(" .emergente .mayor").addEventListener("click" , hola);
+
+
+}
+
+function adios(){
+location.href="https://conlaa.com/el-deporte-masculino-os-suena/";
+}
+
+
+function hola(){
+document.querySelector(" .emergente").style.display="none";
+document.querySelector("#container").style.opacity="1";
+
+}
+
+
+
+
+
+</script>
+
+
+<script src="j"></script>
+
+
+
+
+</head>
+<body>
+    
+<div id="container"> ... </div>
+
+<div class="emergente">
+<p>Debe ser mayor de edad para entrar</p>
+<div class="boton menor">Tengo menos de 18 años</div>
+<div class="boton mayor">Soy mayor de edad</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

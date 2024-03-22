@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body background="img/fondo.jpg">
+    
+
+<form name="login" style="background-color: rgb(219, 181, 255); margin-top: 400px; width: 350px; margin-left: 600px;"  >
+<table>
+<tr>
+<th><h2 scope="row">USUARIO</h2></th>
+<td>
+<span class="cnt">
+<input type="text" name="usuario" class="input" value="">
+
+
+
+</span>
+
+
+</td>
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+<th><h2 scope="row">CLAVE</h2></th>
+
+<td>
+  <span class="cnt">
+<input type="pasword" name="pasword" class="input" value="">
+  </span>  
+</td>
+
+
+
+
+
+
+
+
+
+<td>
+<span class="cnt">
+<input type="button" value="entrar" target="_parent" value="" class="button">
+
+
+
+</span>
+
+
+
+</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+<tr>
+<th scape="row">
+<input type="reset" name="borrar" id="name" value="reset" class="button">
+
+</th>
+
+</tr>
+
+
+</table>
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+function login(){
+var done = 0;
+var usuario = document.login.usuario.value;
+var pasword = document.login.value;
+if(usuario == "" && pasword ==""){
+window.location="ficha.html";
+}
+
+
+
+
+}
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+document.oncontextmenu=function() { return false}
+
+
+
+
+
+</script>
+    
+</body>
+</html>
